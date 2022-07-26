@@ -7,16 +7,22 @@ body {
   overflow-x: hidden;
 }
 
+.offset-1:before {
+  display: block;
+  content: "";
+  height: 5em;
+}
+
 .navbar {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  background: rgba(0, 0, 0, 0.8) ;
+  background: rgba(0, 0, 0, 0.8);
 }
 .nav-txt {
   padding: 10px 0px;
 }
- .navbar-collapse .navbar-nav .nav-link {
+.navbar-collapse .navbar-nav .nav-link {
   color: #fff;
   margin-left: 20px;
 }
@@ -40,7 +46,7 @@ body {
 .heading-content h1 {
   font-size: 5em;
   font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   /* color: #fff; */
 }
@@ -56,43 +62,78 @@ body {
   word-spacing: 2px;
 }
 
-#about .btn{
-    border: 2px transparent solid;
-    width: 40%;
-    padding: 15px 20px;
-    background:#000;
-    margin-top: 10px;
+#about .btn {
+  border: 2px transparent solid;
+  width: 40%;
+  padding: 15px 20px;
+  background: #000;
+  margin-top: 10px;
 }
-#about .btn a{
-
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
+#about .btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-#about .btn:hover{
-    border: 2px #1ebba3 solid;
-    cursor: pointer;
-
+#about .btn:hover {
+  border: 2px #1ebba3 solid;
+  cursor: pointer;
 }
-#servise .button{
-    border: 2px transparent solid;
-    width: 40%;
-    padding: 15px 20px;
-    background:#000;
-    margin-top: 10px;}
-
-#servise .button a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
+#servise .button {
+  border: 2px transparent solid;
+  width: 40%;
+  padding: 15px 20px;
+  background: #000;
+  margin-top: 10px;
 }
 
-#servise .button:hover{
-    border: 2px #1ebba3 solid;
-    cursor: pointer;
+#servise .button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+#servise .button:hover {
+  border: 2px #1ebba3 solid;
+  cursor: pointer;
+}
+.sec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #e4e3e3;
+}
+.sec1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+.sec1 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.text-reset i {
+  transition: 0.5s all;
+}
+.text-reset i:hover {
+  color: #000;
+  transform: scale(1.7);
+}
+
+.footer-up {
+  transition: 1s all;
+}
+.footer-up:hover {
+  background: #000;
+  color: #fff;
+}
+
+.footer-up:hover .text-reset i {
+  color: #fff;
 }
